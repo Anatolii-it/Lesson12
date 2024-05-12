@@ -1,4 +1,4 @@
-#include <iostream>
+ï»¿#include <iostream>
 using namespace std;
 
 const int M_EXAMS = 5;
@@ -52,32 +52,32 @@ STUDENT& lowest_average(STUDENT students[], int count)
 int main()
 {
     int count;
-    cout << "Ââåä³òü ê³ëüê³ñòü ñòóäåíò³â: ";
+    cout << "Ð’Ð²ÐµÐ´Ñ–Ñ‚ÑŒ ÐºÑ–Ð»ÑŒÐºÑ–ÑÑ‚ÑŒ ÑÑ‚ÑƒÐ´ÐµÐ½Ñ‚Ñ–Ð²: ";
     cin >> count;
 
     STUDENT* students = new STUDENT[count];
 
     for (int i = 0; i < count; i++)
     {
-        cout << "Ââåä³òü ïð³çâèùå ñòóäåíòà: ";
+        cout << "Ð’Ð²ÐµÐ´Ñ–Ñ‚ÑŒ Ð¿Ñ€Ñ–Ð·Ð²Ð¸Ñ‰Ðµ ÑÑ‚ÑƒÐ´ÐµÐ½Ñ‚Ð°: ";
         cin >> students[i].surname;
-        cout << "Ââåä³òü äåíü íàðîäæåííÿ ñòóäåíòà: ";
+        cout << "Ð’Ð²ÐµÐ´Ñ–Ñ‚ÑŒ Ð´ÐµÐ½ÑŒ Ð½Ð°Ñ€Ð¾Ð´Ð¶ÐµÐ½Ð½Ñ ÑÑ‚ÑƒÐ´ÐµÐ½Ñ‚Ð°: ";
         cin >> students[i].day;
-        cout << "Ââåä³òü ì³ñÿöü íàðîäæåííÿ ñòóäåíòà: ";
+        cout << "Ð’Ð²ÐµÐ´Ñ–Ñ‚ÑŒ Ð¼Ñ–ÑÑÑ†ÑŒ Ð½Ð°Ñ€Ð¾Ð´Ð¶ÐµÐ½Ð½Ñ ÑÑ‚ÑƒÐ´ÐµÐ½Ñ‚Ð°: ";
         cin >> students[i].month;
-        cout << "Ââåä³òü ð³ê íàðîäæåííÿ ñòóäåíòà: ";
+        cout << "Ð’Ð²ÐµÐ´Ñ–Ñ‚ÑŒ Ñ€Ñ–Ðº Ð½Ð°Ñ€Ð¾Ð´Ð¶ÐµÐ½Ð½Ñ ÑÑ‚ÑƒÐ´ÐµÐ½Ñ‚Ð°: ";
         cin >> students[i].year;
 
         int exams_count;
-        cout << "Ââåä³òü ê³ëüê³ñòü ³ñïèò³â äëÿ ñòóäåíòà " << students[i].surname << ": ";
+        cout << "Ð’Ð²ÐµÐ´Ñ–Ñ‚ÑŒ ÐºÑ–Ð»ÑŒÐºÑ–ÑÑ‚ÑŒ Ñ–ÑÐ¿Ð¸Ñ‚Ñ–Ð² Ð´Ð»Ñ ÑÑ‚ÑƒÐ´ÐµÐ½Ñ‚Ð° " << students[i].surname << ": ";
         cin >> exams_count;
 
         students[i].exams = new int[exams_count];
 
-        cout << "Ââåä³òü ðåçóëüòàòè ³ñïèò³â äëÿ ñòóäåíòà " << students[i].surname << ":" << endl;
+        cout << "Ð’Ð²ÐµÐ´Ñ–Ñ‚ÑŒ Ñ€ÐµÐ·ÑƒÐ»ÑŒÑ‚Ð°Ñ‚Ð¸ Ñ–ÑÐ¿Ð¸Ñ‚Ñ–Ð² Ð´Ð»Ñ ÑÑ‚ÑƒÐ´ÐµÐ½Ñ‚Ð° " << students[i].surname << ":" << endl;
         for (int j = 0; j < exams_count; j++)
         {
-            cout << "Îö³íêà çà ³ñïèò " << j + 1 << ": ";
+            cout << "ÐžÑ†Ñ–Ð½ÐºÐ° Ð·Ð° Ñ–ÑÐ¿Ð¸Ñ‚ " << j + 1 << ": ";
             cin >> students[i].exams[j];
         }
 
@@ -88,15 +88,15 @@ int main()
     STUDENT& lowest = lowest_average(students, count);
 
     cout << endl;
-    cout << "------Ñòóäåíò ç íàéâèùèì ñåðåäí³ì áàëîì:------" << endl;
-    cout << "Ïð³çâèùå: " << highest.surname << endl;
-    cout << "Äàòà íàðîäæåííÿ: " << highest.day << "." << highest.month << "." << highest.year << endl;
-    cout << "Ñåðåäí³é áàë: " << highest.average << endl;
+    cout << "------Ð¡Ñ‚ÑƒÐ´ÐµÐ½Ñ‚ Ð· Ð½Ð°Ð¹Ð²Ð¸Ñ‰Ð¸Ð¼ ÑÐµÑ€ÐµÐ´Ð½Ñ–Ð¼ Ð±Ð°Ð»Ð¾Ð¼:------" << endl;
+    cout << "ÐŸÑ€Ñ–Ð·Ð²Ð¸Ñ‰Ðµ: " << highest.surname << endl;
+    cout << "Ð”Ð°Ñ‚Ð° Ð½Ð°Ñ€Ð¾Ð´Ð¶ÐµÐ½Ð½Ñ: " << highest.day << "." << highest.month << "." << highest.year << endl;
+    cout << "Ð¡ÐµÑ€ÐµÐ´Ð½Ñ–Ð¹ Ð±Ð°Ð»: " << highest.average << endl;
     cout << endl;
-    cout << "------Ñòóäåíò ç íàéíèæ÷èì ñåðåäí³ì áàëîì:------" << endl;
-    cout << "Ïð³çâèùå: " << lowest.surname << endl;
-    cout << "Äàòà íàðîäæåííÿ: " << lowest.day << "." << lowest.month << "." << lowest.year << endl;
-    cout << "Ñåðåäí³é áàë: " << lowest.average << endl;
+    cout << "------Ð¡Ñ‚ÑƒÐ´ÐµÐ½Ñ‚ Ð· Ð½Ð°Ð¹Ð½Ð¸Ð¶Ñ‡Ð¸Ð¼ ÑÐµÑ€ÐµÐ´Ð½Ñ–Ð¼ Ð±Ð°Ð»Ð¾Ð¼:------" << endl;
+    cout << "ÐŸÑ€Ñ–Ð·Ð²Ð¸Ñ‰Ðµ: " << lowest.surname << endl;
+    cout << "Ð”Ð°Ñ‚Ð° Ð½Ð°Ñ€Ð¾Ð´Ð¶ÐµÐ½Ð½Ñ: " << lowest.day << "." << lowest.month << "." << lowest.year << endl;
+    cout << "Ð¡ÐµÑ€ÐµÐ´Ð½Ñ–Ð¹ Ð±Ð°Ð»: " << lowest.average << endl;
 
     
     for (int i = 0; i < count; i++)
