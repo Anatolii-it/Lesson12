@@ -1,4 +1,4 @@
-#include "complex.h"
+ï»¿#include "complex.h"
 
 int main() {
     Complex a = { 3, 2 };
@@ -9,10 +9,10 @@ int main() {
     Complex product = multiply(a, b);
     Complex quotient = divide(a, b);
 
-    std::cout << "Ñóììà äîð³âíþº: " << sum.real << "         êîìïëåêñíå:  " << sum.imag << "i\n";
-    std::cout << "       Ð³çíèöÿ: " << difference.real << "         êîìïëåêñíå:  " << difference.imag << "i\n";
-    std::cout << "      Ìíîæåííÿ: " << product.real << "         êîìïëåêñíå:  " << product.imag << "i\n";
-    std::cout << "       Ä³ëåííÿ: " << quotient.real << "       êîìïëåêñíå:  " << quotient.imag << "i\n";
+    std::cout << "Ð¡ÑƒÐ¼Ð¼Ð° Ð´Ð¾Ñ€Ñ–Ð²Ð½ÑŽÑ”: " << sum.real << "         ÐºÐ¾Ð¼Ð¿Ð»ÐµÐºÑÐ½Ðµ:  " << sum.imag << "i\n";
+    std::cout << "       Ð Ñ–Ð·Ð½Ð¸Ñ†Ñ: " << difference.real << "         ÐºÐ¾Ð¼Ð¿Ð»ÐµÐºÑÐ½Ðµ:  " << difference.imag << "i\n";
+    std::cout << "      ÐœÐ½Ð¾Ð¶ÐµÐ½Ð½Ñ: " << product.real << "         ÐºÐ¾Ð¼Ð¿Ð»ÐµÐºÑÐ½Ðµ:  " << product.imag << "i\n";
+    std::cout << "       Ð”Ñ–Ð»ÐµÐ½Ð½Ñ: " << quotient.real << "       ÐºÐ¾Ð¼Ð¿Ð»ÐµÐºÑÐ½Ðµ:  " << quotient.imag << "i\n";
 
     return 0;
 }
