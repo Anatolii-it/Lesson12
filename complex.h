@@ -2,6 +2,8 @@
 #define COMPLEX_H
 #include <iostream>
 
+using namespace std;
+
 struct Complex {
     double real;
     double imag;

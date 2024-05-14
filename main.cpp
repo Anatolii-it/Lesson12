@@ -9,10 +9,10 @@ int main() {
     Complex product = multiply(a, b);
     Complex quotient = divide(a, b);
 
-    std::cout << "Сумма дорівнює: " << sum.real << "         комплексне:  " << sum.imag << "i\n";
-    std::cout << "       Різниця: " << difference.real << "         комплексне:  " << difference.imag << "i\n";
-    std::cout << "      Множення: " << product.real << "         комплексне:  " << product.imag << "i\n";
-    std::cout << "       Ділення: " << quotient.real << "       комплексне:  " << quotient.imag << "i\n";
+    cout << "Сумма дорівнює: " << sum.real << "         комплексне:  " << sum.imag << "i\n";
+    cout << "       Різниця: " << difference.real << "         комплексне:  " << difference.imag << "i\n";
+    cout << "      Множення: " << product.real << "         комплексне:  " << product.imag << "i\n";
+    cout << "       Ділення: " << quotient.real << "       комплексне:  " << quotient.imag << "i\n";
 
     return 0;
 }
