@@ -1,17 +1,17 @@
-
+ï»¿
 #include "passenger.h"
 
 void inputPassengers(Passenger* passengers, int N) {
     for (int i = 0; i < N; ++i) {
-        cout << "Ïàñàæèğ " << i + 1 << ":\n";
-        cout << "Ï²Á: ";
+        cout << "ĞŸĞ°ÑĞ°Ğ¶Ğ¸Ñ€ " << i + 1 << ":\n";
+        cout << "ĞŸĞ†Ğ‘: ";
         cin.ignore();
         cin.getline(passengers[i].fullName, 100);
-        cout << "ê³ëüê³ñü ğå÷åé: ";
+        cout << "ĞºÑ–Ğ»ÑŒĞºÑ–ÑÑŒ Ñ€ĞµÑ‡ĞµĞ¹: ";
         cin >> passengers[i].luggageCount;
-        cout << "Çàãàëüíà âàãà: ";
+        cout << "Ğ—Ğ°Ğ³Ğ°Ğ»ÑŒĞ½Ğ° Ğ²Ğ°Ğ³Ğ°: ";
         cin >> passengers[i].totalLuggageWeight;
-        cout << "Íîìåğ ğåéñó: ";
+        cout << "ĞĞ¾Ğ¼ĞµÑ€ Ñ€ĞµĞ¹ÑÑƒ: ";
         cin >> passengers[i].flightNumber;
     }
 }
@@ -32,10 +32,10 @@ void sortPassengersByFlightNumber(Passenger* passengers, int N) {
 void printSortBuFl(Passenger* passengers, int N) {
     cout << endl;
     cout << "#-------------------------------------#\n";
-    cout << "Ïàñàæèğè â³äñîòğîâàí³ çà íîìåğîì ğåéñó:\n";
+    cout << "ĞŸĞ°ÑĞ°Ğ¶Ğ¸Ñ€Ğ¸ Ğ²Ñ–Ğ´ÑĞ¾Ñ‚Ñ€Ğ¾Ğ²Ğ°Ğ½Ñ– Ğ·Ğ° Ğ½Ğ¾Ğ¼ĞµÑ€Ğ¾Ğ¼ Ñ€ĞµĞ¹ÑÑƒ:\n";
     for (int i = 0; i < N; i++)
     {
-        cout << "Ïàñàæèğ: " << passengers[i].fullName << ", Íîìåğ ğåéñó: " << passengers[i].flightNumber << "\n";
+        cout << "ĞŸĞ°ÑĞ°Ğ¶Ğ¸Ñ€: " << passengers[i].fullName << ", ĞĞ¾Ğ¼ĞµÑ€ Ñ€ĞµĞ¹ÑÑƒ: " << passengers[i].flightNumber << "\n";
     }
     cout << "#-------------------------------------#\n";
     cout << endl;
@@ -43,10 +43,10 @@ void printSortBuFl(Passenger* passengers, int N) {
 
 void displayPassengersWithHeavyLuggage(Passenger* passengers, int N) {
     
-    cout << "Ïàñàæèğè áàãàæ ÿêèõ ñêëàäàºòüñÿ ³ç îäí³º¿ ğå÷³ âàãîş ïîíàä 30êã:\n";
+    cout << "ĞŸĞ°ÑĞ°Ğ¶Ğ¸Ñ€Ğ¸ Ğ±Ğ°Ğ³Ğ°Ğ¶ ÑĞºĞ¸Ñ… ÑĞºĞ»Ğ°Ğ´Ğ°Ñ”Ñ‚ÑŒÑÑ Ñ–Ğ· Ğ¾Ğ´Ğ½Ñ–Ñ”Ñ— Ñ€ĞµÑ‡Ñ– Ğ²Ğ°Ğ³Ğ¾Ñ Ğ¿Ğ¾Ğ½Ğ°Ğ´ 30ĞºĞ³:\n";
     for (int i = 0; i < N; ++i) {
         if (passengers[i].totalLuggageWeight > 30 && passengers[i].luggageCount == 1) {
-            cout << "Ïàñàæèğ: " << passengers[i].fullName << ", Íîìåğ ğåéñó: " << passengers[i].flightNumber << "\n";
+            cout << "ĞŸĞ°ÑĞ°Ğ¶Ğ¸Ñ€: " << passengers[i].fullName << ", ĞĞ¾Ğ¼ĞµÑ€ Ñ€ĞµĞ¹ÑÑƒ: " << passengers[i].flightNumber << "\n";
         }
     }
     cout << "#-------------------------------------#\n";
