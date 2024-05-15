@@ -1,8 +1,8 @@
-#include "passenger.h"
+ï»¿#include "passenger.h"
 
 int main() {
     int N;
-    cout << "Ââåä³òü ê³ëüê³ñòü ïàñàæèğ³â: ";
+    cout << "Ğ’Ğ²ĞµĞ´Ñ–Ñ‚ÑŒ ĞºÑ–Ğ»ÑŒĞºÑ–ÑÑ‚ÑŒ Ğ¿Ğ°ÑĞ°Ğ¶Ğ¸Ñ€Ñ–Ğ²: ";
     cin >> N;
 
     Passenger* passengers = new Passenger[N];
