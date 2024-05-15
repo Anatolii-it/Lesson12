@@ -30,6 +30,7 @@ void sortPassengersByFlightNumber(Passenger* passengers, int N) {
 }
 
 void printSortBuFl(Passenger* passengers, int N) {
+    cout << endl;
     cout << "#-------------------------------------#\n";
     cout << "Пасажири відсотровані за номером рейсу:\n";
     for (int i = 0; i < N; i++)
@@ -41,13 +42,13 @@ void printSortBuFl(Passenger* passengers, int N) {
 }
 
 void displayPassengersWithHeavyLuggage(Passenger* passengers, int N) {
-    //cout << "#-------------------------------------#\n";
-    cout << "Пасажири з важким багажем:\n";
+    
+    cout << "Пасажири багаж яких складається із однієї речі вагою понад 30кг:\n";
     for (int i = 0; i < N; ++i) {
         if (passengers[i].totalLuggageWeight > 30 && passengers[i].luggageCount == 1) {
             cout << "Пасажир: " << passengers[i].fullName << ", Номер рейсу: " << passengers[i].flightNumber << "\n";
         }
     }
-   // cout << "#-------------------------------------#\n";
+    cout << "#-------------------------------------#\n";
 }
 
