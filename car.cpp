@@ -1,4 +1,4 @@
-#include "car.h"
+ï»¿#include "car.h"
 
 void setCarParameters(Car& car, double length, double clearance, double engineVolume, double enginePower, double wheelDiameter, const std::string& color, const std::string& transmissionType) {
     car.length = length;
@@ -12,13 +12,13 @@ void setCarParameters(Car& car, double length, double clearance, double engineVo
 
 void displayCarParameters(const Car& car) {
     cout << "#-----------------------------#\n";
-    cout << "#      Çàãàëüí³ ïàðàìåòðè:    #\n";
-    cout << "#        Äîâæèíà: " << car.length << " ì       #\n";
-    cout << "#        Êë³ðåíñ: " << car.clearance << " ì       #\n";
-    cout << "#          Îá'ºì: " << car.engineVolume << " ë       #\n";
-    cout << "#     Ïîòóæí³ñòü: " << car.enginePower << " ëñ      #\n";
-    cout << "#  Ä³àìåòð êîë³ñ: " << car.wheelDiameter << " ä        #\n";
-    cout << "#          Êîë³ð: " << car.color << "     #\n";
-    cout << "#     Òðàíñì³ñ³ÿ: " << car.transmissionType << "     #\n";
+    cout << "#      Ð—Ð°Ð³Ð°Ð»ÑŒÐ½Ñ– Ð¿Ð°Ñ€Ð°Ð¼ÐµÑ‚Ñ€Ð¸:    #\n";
+    cout << "#        Ð”Ð¾Ð²Ð¶Ð¸Ð½Ð°: " << car.length << " Ð¼       #\n";
+    cout << "#        ÐšÐ»Ñ–Ñ€ÐµÐ½Ñ: " << car.clearance << " Ð¼       #\n";
+    cout << "#          ÐžÐ±'Ñ”Ð¼: " << car.engineVolume << " Ð»       #\n";
+    cout << "#     ÐŸÐ¾Ñ‚ÑƒÐ¶Ð½Ñ–ÑÑ‚ÑŒ: " << car.enginePower << " Ð»Ñ      #\n";
+    cout << "#  Ð”Ñ–Ð°Ð¼ÐµÑ‚Ñ€ ÐºÐ¾Ð»Ñ–Ñ: " << car.wheelDiameter << " Ð´        #\n";
+    cout << "#          ÐšÐ¾Ð»Ñ–Ñ€: " << car.color << "     #\n";
+    cout << "#     Ð¢Ñ€Ð°Ð½ÑÐ¼Ñ–ÑÑ–Ñ: " << car.transmissionType << "     #\n";
     cout << "#-----------------------------#\n";
 }
